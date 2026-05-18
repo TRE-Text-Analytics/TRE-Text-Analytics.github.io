@@ -192,3 +192,58 @@ body::before {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ===== Coming-soon / disabled link state ===== */
+.link-btn.coming-soon {
+  position: relative;
+  background: transparent;
+  border: 1px dashed var(--rule);
+  color: var(--ink-muted);
+  cursor: not-allowed;
+  box-shadow: none;
+  padding-right: 110px; /* room for the badge */
+}
+
+.link-btn.coming-soon::after {
+  content: attr(data-status);
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  font-family: var(--sans);
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: var(--bg-soft);
+  color: var(--ink-muted);
+  border: 1px solid var(--rule);
+  white-space: nowrap;
+}
+
+/* Neutralise hover and click effects */
+.link-btn.coming-soon:hover {
+  background: transparent;
+  color: var(--ink-muted);
+  border-color: var(--rule);
+  transform: none;
+  box-shadow: none;
+}
+
+.link-btn.coming-soon:active {
+  transform: none;
+  box-shadow: none;
+}
+
+/* Tighter spacing on small screens */
+@media (max-width: 480px) {
+  .link-btn.coming-soon {
+    padding-right: 96px;
+  }
+  .link-btn.coming-soon::after {
+    font-size: 9.5px;
+    padding: 3px 7px;
+  }
+}
