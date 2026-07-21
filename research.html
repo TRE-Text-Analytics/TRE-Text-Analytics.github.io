@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scientific background, objectives, methodology, and related publications for the TRExt text analytics research project.">
+  <title>Research – TRExt | DARE UK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-logo">
+        <img src="assets/images/trext-logo-dark.svg" alt="TRExt — Text Analytics, A DARE UK Project">
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="site-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html" class="is-active">Research</a></li>
+          <li><a href="documentation.html">Documentation</a></li>
+          <li><a href="pie-activities.html">PIE Activities</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <nav id="nav-drawer" class="nav-drawer" aria-hidden="true" aria-label="Mobile navigation">
+    <div class="nav-drawer__header">
+      <a href="index.html"><img src="assets/images/trext-logo-light.svg" alt="TRExt" height="40"></a>
+      <button class="nav-drawer__close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="nav-drawer__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html" class="is-active">Research</a></li>
+      <li><a href="documentation.html">Documentation</a></li>
+      <li><a href="pie-activities.html">PIE Activities</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Research</h1>
+        <p class="page-hero__subtitle">Scientific background, objectives, methodology, and related publications for the TRExt project.</p>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <h2>Project Summary</h2>
+        <p class="text-lead"><strong>TRExt (TRE Text Analytics) evaluates and extends the DARE UK TREvolution infrastructure to support natural language processing and data model mapping of unstructured text within Trusted Research Environments.</strong></p>
+        <p class="text-secondary">Unstructured text — including clinical correspondence, discharge summaries, radiology reports, and transcribed interviews — contains rich, sensitive information not currently accessible through federated analytics pipelines. TRExt assembles state-of-the-art NLP tools and data standardisation tools into a pipeline deployable within TRE-FX, the federated execution layer of the TREvolution programme. Outputs are mapped to OMOP and CDISC standard data models, with full provenance metadata captured, enabling research-ready analysis across distributed TRE environments while preserving privacy.</p>
+        <div class="callout callout--blue">
+          Public Involvement &amp; Engagement (PIE) activities are embedded throughout all stages of the project. See the <a href="pie-activities.html">PIE Activities page</a> for details.
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--grey">
+      <div class="container">
+        <h2>Research Themes</h2>
+        <div class="grid-3">
+          <div class="card">
+            <span class="wp-badge">WP1</span>
+            <h3>Clinical NLP within TRE-FX</h3>
+            <p class="text-secondary">Deploying the Mental Health Text Analytics Cloud (MH-TAC) and CogStack within TRE-FX to enable named entity recognition and relation extraction from unstructured clinical text. MH-TAC — a containerised platform-as-a-service hosting over 100 NLP models — and CogStack, an EHR Extract-Transform-Load system installed across 6 UK NHS Trusts, provide complementary, clinically validated NLP capabilities across a broad range of clinical disciplines.</p>
+            <div class="deliverables">
+              <div class="deliverables__title">Deliverables</div>
+              <ul>
+                <li>D1.1: Deployable NLP solution within TRE-FX (M6)</li>
+                <li>D1.2: Integrated NLP pipeline for text standardisation (M12)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <span class="wp-badge">WP2</span>
+            <h3>Data Mapping &amp; Standardisation</h3>
+            <p class="text-secondary">Deploying Lettuce (an LLM-assisted OMOP concept mapping tool), Carrot (an OMOP data transformation toolkit), and the Unison data virtualisation platform within TRE-FX. Together these tools convert NLP-extracted concepts into OMOP CDM and CDISC SDTM standard formats — with a 'human in the loop' approval step — enabling federated analysis of text-derived structured data across TREs without requiring physical data duplication.</p>
+            <div class="deliverables">
+              <div class="deliverables__title">Deliverables</div>
+              <ul>
+                <li>D2.1: Deployable OMOP mapping solution within TRE-FX (M6)</li>
+                <li>D2.2: OMOP-to-CDISC mapping via Unison within TRE-FX (M9)</li>
+                <li>D2.3: Integrated text standardisation pipeline (M12)</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <span class="wp-badge">WP3</span>
+            <h3>Project Management &amp; PIE</h3>
+            <p class="text-secondary">A structured programme of project management (PMT, Advisory Board, weekly standups, monthly risk reviews) combined with a full Public Involvement and Engagement (PIE) programme. PIE is led by a dedicated specialist at SAIL Databank, running online and hybrid workshops with members of the public to co-design technical methodologies and capture public trust, concerns, and recommendations that directly inform project decisions.</p>
+            <div class="deliverables">
+              <div class="deliverables__title">Deliverables</div>
+              <ul>
+                <li>D3.1: Kick-off hackathon (M1)</li>
+                <li>D3.2: RRI action plan (M3)</li>
+                <li>D3.3: PIE workshops (M4)</li>
+                <li>D3.4: PIE findings report (M6)</li>
+                <li>D3.5: Final technical report (M12)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <h2>Methodology</h2>
+        <p class="text-secondary">TRExt's methodology spans four interlocking areas — data, NLP, standardisation, and provenance — combining open datasets, clinically-validated tools, and FAIR practices.</p>
+        <div class="grid-2 method-grid">
+          <div class="card card--accent-left method-card">
+            <div class="icon-badge" aria-hidden="true">🗄️</div>
+            <h3>Data Gathering</h3>
+            <p class="text-secondary mb-0">Project development uses fully open or synthetic data — specifically MIMIC-III and MIMIC-IV (publicly available de-identified clinical datasets) and synthetic/AI-generated fake clinical text. Validation uses the de-identified CRIS dataset (South London and Maudsley NHS Foundation Trust EHR), which has established ethics approval and governance. In production TRE deployments, unstructured text processing is undertaken entirely by the TRE provider; researchers never access the raw unstructured data.</p>
+          </div>
+          <div class="card card--accent-left-amber method-card">
+            <div class="icon-badge icon-badge--amber" aria-hidden="true">⚙️</div>
+            <h3>NLP Pipelines</h3>
+            <p class="text-secondary mb-0">TRExt employs two complementary NLP systems. The CRIS NLP service (MH-TAC), developed for the DATAMIND programme, is a containerised Azure-based platform hosting over 100 NLP models for extracting entities and relations from mental health and general clinical text. CogStack, an EHR Extract-Transform-Load system deployed at 6 UK NHS Trusts and two international providers, is used alongside MH-TAC to extend NLP capability across clinical disciplines. Both systems use MedCAT for SNOMED-CT concept and relation extraction.</p>
+          </div>
+          <div class="card card--accent-left-amber method-card">
+            <div class="icon-badge icon-badge--amber" aria-hidden="true">🔗</div>
+            <h3>Data Standardisation</h3>
+            <p class="text-secondary mb-0">Extracted clinical concepts are mapped to the OMOP Common Data Model (CDM) using Lettuce — an LLM-assisted mapping tool that suggests OMOP vocabulary concepts for source terms — and Carrot, which executes the physical data transformation into OMOP CDM. Interoperability with CDISC SDTM is achieved through the Unison data virtualisation platform, which creates a virtual mapping between OMOP and CDISC, eliminating the need for physical data duplication while enabling CDISC-format analysis within TRE-FX.</p>
+          </div>
+          <div class="card card--accent-left method-card">
+            <div class="icon-badge" aria-hidden="true">🛡️</div>
+            <h3>FAIR Data &amp; Provenance</h3>
+            <p class="text-secondary mb-0">All datasets are documented according to FAIR principles (Findable, Accessible, Interoperable, Reusable). TRExt captures provenance metadata at every stage of the NLP and mapping pipeline using the Five Safes RO-Crate metadata framework, developed in DARE UK TREvolution. This ensures that every analytical output can be traced back to its source, supporting transparency and reproducibility of federated text analytics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--grey">
+      <div class="container">
+        <h2>Related Publications</h2>
+        <p class="text-secondary text-italic">Key publications from the TRExt team underpinning the project's methodology. Publications directly arising from TRExt will be added as they become available.</p>
+
+        <div class="pub-year">2024</div>
+        <div class="pub-cards">
+          <div class="card card--accent-left pub-card">
+            <p class="pub-card__title">TRE-FX: Enabling Federated Analytics Across Trusted Research Environments — Giles et al.</p>
+            <a href="https://doi.org/10.5281/zenodo.10055353" target="_blank" rel="noopener noreferrer" class="pub-card__doi">doi:10.5281/zenodo.10055353 ↗</a>
+          </div>
+          <div class="card card--accent-left pub-card">
+            <p class="pub-card__title">Lettuce: LLM-Assisted OMOP Concept Mapping — Mitchell-White et al.</p>
+            <a href="https://doi.org/10.48550/arXiv.2410.09076" target="_blank" rel="noopener noreferrer" class="pub-card__doi">doi:10.48550/arXiv.2410.09076 ↗</a>
+          </div>
+          <div class="card card--accent-left pub-card">
+            <p class="pub-card__title">Carrot: Software Tool for OMOP Data Transformation — Cox et al.</p>
+            <a href="https://doi.org/10.2196/60917" target="_blank" rel="noopener noreferrer" class="pub-card__doi">doi:10.2196/60917 ↗</a>
+          </div>
+        </div>
+
+        <div class="pub-year">2022</div>
+        <div class="pub-cards">
+          <div class="card card--accent-left pub-card">
+            <p class="pub-card__title">CogStack: Experiences of Deploying Integrated Information Retrieval and Extraction Services in Clinical Settings — Noor et al.</p>
+            <a href="https://doi.org/10.2196/38122" target="_blank" rel="noopener noreferrer" class="pub-card__doi">doi:10.2196/38122 ↗</a>
+          </div>
+          <div class="card card--accent-left pub-card">
+            <p class="pub-card__title">MedCAT: Medical Concept Annotation Tool — Kraljevic et al.</p>
+            <a href="https://doi.org/10.1016/j.artmed.2021.102083" target="_blank" rel="noopener noreferrer" class="pub-card__doi">doi:10.1016/j.artmed.2021.102083 ↗</a>
+          </div>
+        </div>
+
+        <div class="pub-year">2015</div>
+        <div class="pub-cards">
+          <div class="card card--accent-left pub-card">
+            <p class="pub-card__title">CRIS: Maudsley Biomedical Research Centre Clinical Record Interactive Search — Perera et al.</p>
+            <a href="https://doi.org/10.1136/bmjopen-2015-008721" target="_blank" rel="noopener noreferrer" class="pub-card__doi">doi:10.1136/bmjopen-2015-008721 ↗</a>
+          </div>
+        </div>
+
+        <p class="text-secondary text-italic mt-3 mb-0">All code and workflows will be openly shared via GitHub under an open licence.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a href="index.html" class="site-footer__logo"><img src="assets/images/trext-logo-light.svg" alt="TRExt"></a>
+          <p class="site-footer__copyright">© 2026 TRExt Project. Funded by DARE UK / UKRI.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="site-footer__nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="pie-activities.html">PIE Activities</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="https://dareuk.org.uk" target="_blank" rel="noopener noreferrer">DARE UK ↗</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="site-footer__bar">
+        <p>TRExt is a DARE UK Research Exemplar. Built on open-source tools. Code available on GitHub.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/nav.js"></script>
+</body>
+</html>
