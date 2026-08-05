@@ -471,7 +471,33 @@ p {
   color: var(--color-grey-text);
   margin-top: 16px;
 }
+.partner-strip--secondary {
+  margin-top: 40px;
+}
 
+.partner-strip--secondary img {
+  max-height: 90px;
+}
+.logo-small {
+  max-height: 50px !important;
+}
+
+.partner-strip--secondary img {
+  max-height: 90px;
+}
+.logo-small {
+  max-height: 50px !important;
+}
+.partner-strip--large img {
+  max-height: 140px;
+}
+
+.logo-small {
+  max-height: 50px !important;
+}
+.logo-large {
+  max-height: 130px !important;
+}
 /* Callouts */
 .callout {
   padding: 20px 24px;
