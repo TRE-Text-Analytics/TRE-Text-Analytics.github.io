@@ -476,28 +476,40 @@ p {
 }
 
 .partner-strip--secondary img {
-  max-height: 90px;
-}
-.logo-small {
-  max-height: 50px !important;
+  height: 48px;
+  width: auto;
+  object-fit: contain;
 }
 
-.partner-strip--secondary img {
-  max-height: 90px;
-}
-.logo-small {
-  max-height: 50px !important;
-}
 .partner-strip--large img {
-  max-height: 140px;
+  height: 72px;
+  width: auto;
+  object-fit: contain;
+}
+.logo-nottingham-brc {
+  height: 32px !important;
+  max-height: 32px !important;
+  width: auto !important;
 }
 
-.logo-small {
-  max-height: 50px !important;
+.logo-maudsley-brc {
+  height: 180px !important;
+  max-height: 180px !important;
+  width: auto !important;
 }
-.logo-large {
-  max-height: 130px !important;
+
+.logo-nuh {
+  height: 92px !important;
+  max-height: 92px !important;
+  width: auto !important;
 }
+
+.logo-slam {
+  height: 120px !important;
+  max-height: 120px !important;
+  width: auto !important;
+}
+
 /* Callouts */
 .callout {
   padding: 20px 24px;
