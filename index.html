@@ -1,96 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TRExt — Text Analytics for TREs</title>
-  <meta name="description"
-    content="TRExt: federated analysis and natural language processing of clinical data in Trusted Research Environments." />
-  <meta property="og:title" content="TRExt" />
-  <meta property="og:description"
-    content="Federated analysis and NLP of clinical data in Trusted Research Environments." />
-  <meta property="og:type" content="website" />
-
-  <link rel="icon"
-    href="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%231a3a5c'/><text x='50%25' y='56%25' text-anchor='middle' font-family='Georgia, serif' font-size='38' font-weight='400' font-style='italic' fill='%23ffffff' dominant-baseline='middle'>T</text></svg>" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TRExt: TRE Text Analytics. A DARE UK Next-Gen Catalyst bringing NLP and data standardisation to Trusted Research Environments.">
+  <title>Home – TRExt | DARE UK</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&display=swap"
-    rel="stylesheet">
-
-  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-  <main class="profile">
 
-    <header class="profile-head">
-      <img src="assets/images/TRExt_dark.svg" />
-      <p class="profile-bio">
-        Enabling Trusted Research Environments to safely analyse sensitive unstructured text through federated, privacy-preserving analytics.
-      </p>
-      <p class="profile-affil"></p>
-    </header>
-
-    <nav class="links" aria-label="Trext project links">
-
-      <!-- Edit, duplicate, or delete any <a class="link-btn"> block below. -->
-
-      <a class="link-btn" href="https://dareuk.org.uk/how-we-work/ongoing-activities/dare-uk-next-gen-catalysts/trext/" target="_blank" rel="noopener">
-        TRExt project summary - DARE UK website
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-logo">
+        <img src="assets/images/trext-logo-dark.svg" alt="TRExt — Text Analytics, A DARE UK Project">
       </a>
+      <nav aria-label="Main navigation">
+        <ul class="site-nav">
+          <li><a href="index.html" class="is-active">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="pie-activities.html">PIE Activities</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
 
-      <a class="link-btn" href="https://github.com/tre-text-analytics" target="_blank" rel="noopener">
-        TRExt GitHub
+  <nav id="nav-drawer" class="nav-drawer" aria-hidden="true" aria-label="Mobile navigation">
+    <div class="nav-drawer__header">
+      <a href="index.html">
+        <img src="assets/images/trext-logo-light.svg" alt="TRExt" height="40">
       </a>
+      <button class="nav-drawer__close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="nav-drawer__links">
+      <li><a href="index.html" class="is-active">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="pie-activities.html">PIE Activities</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
 
-       <a class="link-btn" href="https://miro.com/app/board/uXjVGeVJAKI=/?share_link_id=349534675489" target="_blank" rel="noopener">
-        TRExt architecture diagram - Miro
-      </a>
-      
-      <a class="link-btn" href="https://doi.org/10.1186/s12911-018-0623-9" target="_blank" rel="noopener">
-        CogStack paper
-      </a>
+  <main>
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="hero__label">DARE UK Next-Gen Catalyst</span>
+          <h1>TRExt: TRE Text Analytics</h1>
+          <p class="hero__subtitle">Bringing natural language processing and data standardisation capabilities to Trusted Research Environments to make sensitive unstructured text federation-ready.</p>
+          <div class="btn-group">
+            <a href="research.html" class="btn btn--primary">Explore the Research</a>
+            <a href="https://dareuk.org.uk/how-we-work/ongoing-activities/dare-uk-next-gen-catalysts/trext/" class="btn btn--ghost-white" target="_blank" rel="noopener noreferrer">DARE UK Project Page ↗</a>
+          </div>
+        </div>
+        <div class="hero__logo">
+          <img src="assets/images/trext-logo-light.svg" alt="TRExt logo">
+        </div>
+      </div>
+    </section>
 
-      <a class="link-btn" href="https://github.com/cogstack" target="_blank" rel="noopener">
-        CogStack GitHub
-      </a>
+    <section class="section section--white">
+      <div class="container">
+        <span class="section-label">About the Project</span>
+        <h2>Project Overview</h2>
+        <p class="text-secondary text-lead">Sensitive free-text holds vital research evidence that current Trusted Research Environments (TREs) cannot access. TRExt unlocks it by converting unstructured documents into structured, standardised data that can be used in federated analyses. Sensitive data never leaves the TRE. We demonstrate this capability using clinical text.</p>
+        <div class="grid-2 mt-3">
+          <div class="card card--accent-left">
+            <h3>The Challenge</h3>
+            <p class="text-secondary mb-0">Some of the richest health information available is recorded in unstructured text, including clinical letters, discharge summaries, and radiology reports. Yet converting this free-text into the standard data models used by TREs, at the scale demanded by modern research, remains an unsolved technical challenge. As a result, unstructured clinical text is rarely included in TREs, and the evidence it contains remains out of reach for researchers.</p>
+          </div>
+          <div class="card card--accent-left">
+            <h3>Our Approach</h3>
+            <p class="text-secondary mb-0">TRExt embeds a modular natural language processing pipeline directly inside a TRE, automatically converting sensitive clinical free-text into structured, standardised data conforming to a data model used by TREs (called OMOP). The pipeline provides Safe Data for use with federated data technology (called Five Safes TES), enabling the resulting structured data to be queried across institutions as part of federated analyses.</p>
+          </div>
+          <div class="card card--accent-left">
+            <h3>Public Involvement &amp; Engagement</h3>
+            <p class="text-secondary mb-0">Involving the public is central to TRExt. We run a structured programme of workshops and co-design activities aligned to DARE UK public involvement and engagement guidelines, ensuring that public perspectives shape technical design decisions throughout the project.</p>
+          </div>
+          <div class="card card--accent-left">
+            <h3>Expected Impact</h3>
+            <p class="text-secondary mb-0">TRExt will unlock federated analysis of unstructured senstive text for the first time within TREs, opening new research possibilities across a wide range of clinical domains. Beyond its immediate outputs, the project will establish reusable, open-source infrastructure and set standards for responsible, privacy-preserving text analytics that any TRE in the UK can adopt.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-       <a class="link-btn" href="https://doi.org/10.2196/60917" target="_blank" rel="noopener">
-        Carrot paper
-      </a>
-      
-       <a class="link-btn" href="https://github.com/Health-Informatics-UoN/Carrot" target="_blank" rel="noopener">
-        Carrot GitHub
-      </a>
+    <section class="section section--grey">
+      <div class="container">
+        <h2>Latest News</h2>
+        <div class="grid-3">
+          <article class="card news-card">
+            <span class="news-card__date">September 2026</span>
+            <h3>TRExt presented at OHDSI UK 2026</h3>
+            <p>The TRExt project will be presented at the OHDSI UK 2026 meeting.  Look out for the TRExt lightning talk and poster presentations.</p>
+          </article>
+          <article class="card news-card">
+            <span class="news-card__date">June 2026</span>
+            <h3>TRExt presented at HealTAC 2026</h3>
+            <p>The TRExt team attended HealTAC 2026, presenting a talk during a pre-conference workshop and a poster during the main event.</p>
+          </article>
+          <article class="card news-card">
+            <span class="news-card__date">November 2025</span>
+            <h3>TRExt kicks off with two-day Hackathon</h3>
+            <p>The TRExt team held its inaugural hackathon bringing all partners together to align on tools, architecture, and integration strategy.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <a class="link-btn" href="https://docs.federated-analytics.ac.uk/five_safes_tes" target="_blank" rel="noopener">
-        Five Safes TES documentation
-      </a>
+    <h3 class="partner-strip__label">Partner Institutions</h3>
 
-  <a class="link-btn" href="https://github.com/SwanseaUniversityMedical/5s-Tes" target="_blank" rel="noopener">
-        Five Safes TES GitHub
-      </a>
-      
-       <a class="link-btn" href="https://www.ohdsi.org/data-standardization/" target="_blank" rel="noopener">
-        OMOP CDM - OHDSI website
-      </a> 
-  
-
-    </nav>
-
-    <footer class="profile-foot">
-      <p>&copy; <span id="year"></span> The TRExt Project</p>
-    </footer>
-
+    <div class="partner-strip">
+      <img src="assets/images/institutions/nottingham.png" alt="University of Nottingham">
+      <img src="assets/images/institutions/kcl.png" alt="King's College London">
+      <img src="assets/images/institutions/swansea.png" alt="Swansea University">
+      <img src="assets/images/institutions/unison.png" alt="Unison (Hyperunison)">
+      <img src="assets/images/institutions/sail.png" alt="SAIL Databank">
+    </div>
+    
+    <div class="partner-strip partner-strip--secondary">
+      <img src="assets/images/institutions/nihr-nottingham-brc.png" alt="NIHR Nottingham BRC" class="logo-nottingham-brc">
+      <img src="assets/images/institutions/nihr-maudsley-brc.png" alt="NIHR Maudsley BRC" class="logo-maudsley-brc">
+    </div>
+    
+    <div class="partner-strip partner-strip--secondary partner-strip--large mt-2">
+      <img src="assets/images/institutions/nhs-nuh.png" alt="NHS NUH Trust">
+      <img src="assets/images/institutions/nhs-slam-cropped.png" alt="NHS SLaM Trust">
+    </div>
   </main>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a href="index.html" class="site-footer__logo">
+            <img src="assets/images/trext-logo-light.svg" alt="TRExt">
+          </a>
+          <p class="site-footer__copyright">© 2026 TRExt Project.</p> <p class="site-footer__copyright">Funded by DARE UK / UKRI.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="site-footer__nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="pie-activities.html">PIE Activities</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="https://dareuk.org.uk" target="_blank" rel="noopener noreferrer">DARE UK ↗</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="site-footer__bar">
+        <p>TRExt is a DARE UK Next-Gen Catalyst.</p>
+      </div>
+    </div>
+  </footer>
 
+  <script src="assets/js/nav.js"></script>
+</body>
 </html>

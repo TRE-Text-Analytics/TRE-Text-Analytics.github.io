@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Developer resources, technical guides, and relevant links for the TRExt text analytics pipeline.">
+  <title>Documentation – TRExt | DARE UK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-logo">
+        <img src="assets/images/trext-logo-dark.svg" alt="TRExt — Text Analytics, A DARE UK Project">
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="site-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="documentation.html" class="is-active">Documentation</a></li>
+          <li><a href="pie-activities.html">PIE Activities</a></li>
+          <li><a href="team.html">Team</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <nav id="nav-drawer" class="nav-drawer" aria-hidden="true" aria-label="Mobile navigation">
+    <div class="nav-drawer__header">
+      <a href="index.html"><img src="assets/images/trext-logo-light.svg" alt="TRExt" height="40"></a>
+      <button class="nav-drawer__close" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="nav-drawer__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="documentation.html" class="is-active">Documentation</a></li>
+      <li><a href="pie-activities.html">PIE Activities</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Documentation</h1>
+        <p class="page-hero__subtitle">Developer resources, technical guides, and relevant links for the TRExt text analytics pipeline.</p>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <h2>Technical Architecture</h2>
+        <p class="text-secondary">TRExt deploys NLP and data mapping workflows as containerised services within the three-layer TREvolution architecture (Submission Layer, Controller Layer, Execution Layer). Text processing occurs entirely within the TRE Execution Layer. Researchers submit analysis requests via the TES API; outputs pass through disclosure control before egress.</p>
+        <img src="assets/images/architecture-diagram.png" alt="TRExt architecture diagram showing TES submission, NLP processing, OMOP mapping, CDISC virtualisation, and egress" class="architecture-diagram">
+        <p class="text-secondary text-italic mb-0">The TRExt pipeline extends TREvolution's three-layer architecture with NLP (MH-TAC, CogStack), concept mapping (Lettuce, Carrot), and data virtualisation (Unison) components in the Execution Layer.</p>
+      </div>
+    </section>
+
+    <section class="section section--grey">
+      <div class="container">
+        <h2>Quick Links</h2>
+        <p class="text-secondary">Documentation, source code, and reference material for the tools, standards, and infrastructure that TRExt builds on.</p>
+
+        <div class="quicklinks-group">
+          <span class="section-label">TRExt Project</span>
+          <div class="grid-3 quicklink-grid">
+            <a class="card quicklink-card" href="https://github.com/Dare-UK-TRExt" target="_blank" rel="noopener noreferrer">
+              <div class="icon-badge" aria-hidden="true">🐙</div>
+              <h3>GitHub Repository <span class="quicklink-card__arrow" aria-hidden="true">↗</span></h3>
+              <p class="text-secondary mb-0">Open-source code for TRExt pipelines, containerised workflows, and configuration scripts.</p>
+            </a>
+            <a class="card quicklink-card" href="https://dareuk.org.uk" target="_blank" rel="noopener noreferrer">
+              <div class="icon-badge" aria-hidden="true">🔗</div>
+              <h3>DARE UK Project Page <span class="quicklink-card__arrow" aria-hidden="true">↗</span></h3>
+              <p class="text-secondary mb-0">Official TRExt project listing on the DARE UK website.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="quicklinks-group">
+          <span class="section-label">NLP &amp; Mapping Tools</span>
+          <div class="grid-3 quicklink-grid">
+            <a class="card quicklink-card" href="https://datamind.org.uk" target="_blank" rel="noopener noreferrer">
+              <div class="icon-badge" aria-hidden="true">🌐</div>
+              <h3>MH-TAC / CRIS NLP <span class="quicklink-card__arrow" aria-hidden="true">↗</span></h3>
+              <p class="text-secondary mb-0">Mental Health Text Analytics Cloud; the containerised NLP platform-as-a-service used by TRExt for clinical entity extraction.</p>
+            </a>
+            <a class="card quicklink-card" href="https://cogstack.org" target="_blank" rel="noopener noreferrer">
+              <div class="icon-badge" aria-hidden="true">🗃️</div>
+              <h3>CogStack <span class="quicklink-card__arrow" aria-hidden="true">↗</span></h3>
+              <p class="text-secondary mb-0">Open-source EHR ETL and NLP framework deployed across 6 UK NHS Trusts.</p>
+            </a>
+            <a class="card quicklink-card" href="https://github.com/CogStack/MedCAT" target="_blank" rel="noopener noreferrer">
+              <div class="icon-badge" aria-hidden="true">🩺</div>
+              <h3>MedCAT <span class="quicklink-card__arrow" aria-hidden="true">↗</span></h3>
+              <p class="text-secondary mb-0">Medical Concept Annotation Tool for SNOMED-CT concept and relation extraction.</p>
+            </a>
+            <a class="card quicklink-card" href="https://github.com/HDRUK/lettuce" target="_blank" rel="noopener noreferrer">
+              <div class="icon-badge" aria-hidden="true">🥬</div>
+              <h3>Lettuce <span class="quicklink-card__arrow" aria-hidden="true">↗</span></h3>
+              <p class="text-secondary mb-0">LLM-assisted tool for mapping source terms to OMOP vocabulary concepts.</p>
+            </a>
+            <a class="card quicklink-card" href="https://carrot4omop.ac.uk" target="_blank" rel="noopener noreferrer">
+              <div class="icon-badge" aria-hidden="true">🥕</div>
+              <h3>Carrot <span class="quicklink-card__arrow" aria-hidden="true">↗</span></h3>
+              <p class="text-secondary mb-0">Software toolkit for transforming data into OMOP CDM (Carrot-mapper + Carrot-transform).</p>
+            </a>
+            <a class="card quicklink-card" href="https://hyperunison.com" target="_blank" rel="noopener noreferrer">
+              <div class="icon-badge" aria-hidden="true">🔀</div>
+              <h3>Unison <span class="quicklink-card__arrow" aria-hidden="true">↗</span></h3>
+              <p class="text-secondary mb-0">Data virtualisation platform enabling OMOP-to-CDISC meta-mapping.</p>
+            </a>
+          </div>
+        </div>
+
+        <div class="quicklinks-group">
+          <span class="section-label">Federated Analytics</span>
+          <div class="grid-3 quicklink-grid">
+            <a class="card quicklink-card" href="https://dareuk.org.uk/trevolution/" target="_blank" rel="noopener noreferrer">
+              <div class="icon-badge" aria-hidden="true">🖧</div>
+              <h3>TRE-FX / TREvolution <span class="quicklink-card__arrow" aria-hidden="true">↗</span></h3>
+              <p class="text-secondary mb-0">DARE UK TREvolution infrastructure; the federated TRE technology stack that TRExt extends.</p>
+            </a>
+            <a class="card quicklink-card" href="https://docs.federated-analytics.ac.uk/five_safes_tes" target="_blank" rel="noopener noreferrer">
+              <div class="icon-badge" aria-hidden="true">📋</div>
+              <h3>5-Safes Task Execution Service <span class="quicklink-card__arrow" aria-hidden="true">↗</span></h3>
+              <p class="text-secondary mb-0">The interoperability standard used by TREvolution for submitting analysis tasks to TREs.</p>
+            </a>
+            <a class="card quicklink-card" href="https://docs.federated-analytics.ac.uk" target="_blank" rel="noopener noreferrer">
+              <div class="icon-badge" aria-hidden="true">📖</div>
+              <h3>Federated Analytics Docs <span class="quicklink-card__arrow" aria-hidden="true">↗</span></h3>
+              <p class="text-secondary mb-0">Standards, patterns, and software for secure federated research.</p>
+            </a>
+            <a class="card quicklink-card" href="https://docs.federated-analytics.ac.uk" target="_blank" rel="noopener noreferrer">
+              <div class="icon-badge" aria-hidden="true">🧩</div>
+              <h3>Five Safes RO-Crate <span class="quicklink-card__arrow" aria-hidden="true">↗</span></h3>
+              <p class="text-secondary mb-0">FAIR Digital Objects for provenance capture in federated TRE environments.</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <h2>Standards &amp; Frameworks</h2>
+        <div class="grid-2">
+          <div class="card standard-card">
+            <div class="standard-card__icon" aria-hidden="true">🛡</div>
+            <div>
+              <h3>Five Safes Framework</h3>
+              <p class="text-secondary mb-0">All TRE operations follow the Five Safes: safe people, safe projects, safe settings, safe data, and safe outputs. TRExt implements this via the TREvolution 5-Safes Task Execution Service.</p>
+            </div>
+          </div>
+          <div class="card standard-card">
+            <div class="standard-card__icon" aria-hidden="true">📋</div>
+            <div>
+              <h3>FAIR Data Principles</h3>
+              <p class="text-secondary mb-0">All datasets and workflows are Findable, Accessible, Interoperable, and Reusable. Provenance metadata is captured throughout the TRExt pipeline using Five Safes RO-Crate.</p>
+            </div>
+          </div>
+          <div class="card standard-card">
+            <div class="standard-card__icon" aria-hidden="true">⚖</div>
+            <div>
+              <h3>UK GDPR &amp; Data Protection Act 2018</h3>
+              <p class="text-secondary mb-0">All activities comply with UK General Data Protection Regulation and the Data Protection Act 2018. CRIS NLP processing has ethics approval from South London and Maudsley NHS Foundation Trust.</p>
+            </div>
+          </div>
+          <div class="card standard-card">
+            <div class="standard-card__icon" aria-hidden="true">👥</div>
+            <div>
+              <h3>DARE UK PIE Guidelines</h3>
+              <p class="text-secondary mb-0">All public involvement and engagement activities align with the DARE UK PIE Guidelines and the PEDRI (Public Engagement in Data Research Infrastructure) Good Practice Standards.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__grid">
+        <div>
+          <a href="index.html" class="site-footer__logo"><img src="assets/images/trext-logo-light.svg" alt="TRExt"></a>
+          <p class="site-footer__copyright">© 2026 TRExt Project. Funded by DARE UK / UKRI.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <ul class="site-footer__nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="pie-activities.html">PIE Activities</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="https://dareuk.org.uk" target="_blank" rel="noopener noreferrer">DARE UK ↗</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="site-footer__bar">
+        <p>TRExt is a DARE UK Research Exemplar. Built on open-source tools. Code available on GitHub.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/nav.js"></script>
+</body>
+</html>
